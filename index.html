@@ -9,432 +9,443 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__enter">
-                <div class="header__sign_in">
-                    <form action="" name="enter">
-                        <input type="text" placeholder="login" class="header__log" maxlength="20">
-                        <input type="password" placeholder="password" class="header__log" maxlength="20">
-                        <input type="button" value="sign in" id="header__signIn" class="header__sign">
-                        <input type="button" value="sign up" id="header__signUp" class="header__sign">
-                    </form>
-                </div>
-                <div class="header__user-info">
-                    <p><i class="fas fa-user-circle"></i> Hello, <span id="header__user-name"></span>! Wellcome to our website!</p>
-                    <form action="" name="exit">
-                        <input type="button" value="my profile" id="header__full-info">
-                        <input type="button" value="exit" id="header__exit">
-                    </form>
-                </div>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__enter">
+            <div class="header__sign_in">
+                <form action="" name="enter">
+                    <input type="text" placeholder="login" class="header__log" maxlength="20">
+                    <input type="password" placeholder="password" class="header__log" maxlength="20">
+                    <input type="button" value="sign in" id="header__signIn" class="header__sign">
+                    <input type="button" value="sign up" id="header__signUp" class="header__sign">
+                </form>
             </div>
-            <div class="header__logo">
-                <div>
-                    <h1>Bicycle <i class="fas fa-bicycle"></i></h1>
-                    <h3>e-shop</h3>
-                </div>
-                <div class="header__logo-center">
-                    <h3>just</h3>
-                    <h3>choose</h3>
-                    <h3>your</h3>
-                    <h2>bicycle</h2>
-                </div>
-                <div class="header__logo-guarantee">
-                    <h2>We guarantee:</h2>
-                    <ul>
-                        <li>lowest prices</li>
-                        <li>highest quality</li>
-                        <li>quickest delivery</li>
-                        <li>smile on your face :)</li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="#" class="nav__item nav__item_active">
-                        <i class="fas fa-home"></i>
-                        <span class="nav__title">general</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav__item">
-                        <i class="fas fa-search"></i>
-                        <span class="nav__title">search</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav__item">
-                        <i class="fas fa-bicycle"></i>
-                        <span class="nav__title">about us</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav__item">
-                        <i class="far fa-envelope"></i>
-                        <span class="nav__title">contacts</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="content">
-            <div class="general page">
-                <aside class="general__aside">
-                    <form action="" name="filter">
-                        <p class="general__aside-title">Price:</p>
-                        <table>
-                            <tr>
-                                <td>from:</td>
-                                <td>
-                                    <input type="text" maxlength="4" class="general__aside-fromTo"> $</td>
-                            </tr>
-                            <tr>
-                                <td>to:</td>
-                                <td>
-                                    <input type="text" maxlength="4" class="general__aside-fromTo"> $</td>
-                            </tr>
-                        </table>
-                        <p class="general__aside-title">Size of wheel:</p>
-                        <label>
-                            <input type="checkbox" name="20"> 20"</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="22"> 22"</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="24"> 24"</label>
-                        <p class="space"></p>
-                        <p class="general__aside-title">Color:</p>
-                        <label>
-                            <input type="checkbox" name="red"> red</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="black"> black</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="orange"> orange</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="brown"> brown</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="colored"> colored</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="grey"> grey</label>
-                        <p class="space"></p>
-                        <p class="general__aside-title">Year:</p>
-                        <label>
-                            <input type="checkbox" name="2015"> 2015</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="2016"> 2016</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="2017"> 2017</label>
-                        <p class="space"></p>
-                        <p class="general__aside-title">Country:</p>
-                        <label>
-                            <input type="checkbox" name="USA"> USA</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="France"> France</label>
-                        <p class="space"></p>
-                        <label>
-                            <input type="checkbox" name="Germany"> Germany</label>
-                        <p class="space"></p>
-                        <input type="button" value="apply" class="general__aside-apply">
-                        <input type="button" value="reset" class="general__aside-reset">
-                    </form>
-                </aside>
-                <div class="general__top">
-                    <div class="general__bikes">
-                        <section class="general__bike-section">
-                            <img class="general__img" src="" alt="">
-                            <p class="general__name"></p>
-                            <p class="general__price"></p>
-                        </section>
-                        <section class="general__bike-section">
-                            <img class="general__img" src="" alt="">
-                            <p class="general__name"></p>
-                            <p class="general__price"></p>
-                        </section>
-                        <section class="general__bike-section">
-                            <img class="general__img" src="" alt="">
-                            <p class="general__name"></p>
-                            <p class="general__price"></p>
-                        </section>
-                        <section class="general__bike-section">
-                            <img class="general__img" src="" alt="">
-                            <p class="general__name"></p>
-                            <p class="general__price"></p>
-                        </section>
-                    </div>
-                    <ul class="general__page-changer">
-                        <li><a id="general__page-changer_b" href="#">move back</a></li>
-                        <li><a id="general__page-changer1" href="#">1</a></li>
-                        <li id="general__page-move"><a id="general__page-changer_f" href="#">move forward</a></li>
-                    </ul>
-                </div>
-                <div class="general__info">
-                    <img class="general__info-img" src="" alt="">
-                    <table>
-                        <tr>
-                            <th>Name:</th>
-                            <td class="general__info-name"></td>
-                        </tr>
-                        <tr>
-                            <th>Price:</th>
-                            <td class="general__info-price"></td>
-                        </tr>
-                        <tr>
-                            <th>Size of wheel:</th>
-                            <td class="general__info-wheel"></td>
-                        </tr>
-                        <tr>
-                            <th>Color:</th>
-                            <td class="general__info-color"></td>
-                        </tr>
-                        <tr>
-                            <th>Year:</th>
-                            <td class="general__info-year"></td>
-                        </tr>
-                        <tr>
-                            <th>Country:</th>
-                            <td class="general__info-country"></td>
-                        </tr>
-                    </table>
-                    <button class="general__close">X</button>
-                </div>
-            </div>
-            <div class="search page">
-                <aside class="search__aside">
-                    <span style="color:red">your</span>
-                    <p class="space"></p>
-                    <span style="color:green">ad</span>
-                    <p class="space"></p>
-                    <span style="color:orange">could</span>
-                    <p class="space"></p>
-                    <span style="color:blue">be</span>
-                    <p class="space ></p>
-                    <span style="color:grey">here</span>
-                </aside>
-                <div class="search__main">
-                    <form action="" name="search">
-                        <label>Model's name:
-                            <input type="text" class="search__text" maxlength="20">
-                        </label>
-                        <input type="button" value="search" class="search__btn">
-                        <input type="button" value="reset" class="search-reset__btn">
-                    </form>
-                    <ul class="search__points"></ul>
-                </div>
-                <div class="general__info">
-                    <img class="general__info-img" src="" alt="">
-                    <table>
-                        <tr>
-                            <th>Name:</th>
-                            <td class="general__info-name"></td>
-                        </tr>
-                        <tr>
-                            <th>Price:</th>
-                            <td class="general__info-price"></td>
-                        </tr>
-                        <tr>
-                            <th>Size of wheel:</th>
-                            <td class="general__info-wheel"></td>
-                        </tr>
-                        <tr>
-                            <th>Color:</th>
-                            <td class="general__info-color"></td>
-                        </tr>
-                        <tr>
-                            <th>Year:</th>
-                            <td class="general__info-year"></td>
-                        </tr>
-                        <tr>
-                            <th>Country:</th>
-                            <td class="general__info-country"></td>
-                        </tr>
-                    </table>
-                    <button class="general__close">X</button>
-                </div>
-            </div>
-            <div class="about page">
-                <aside class="about__aside">
-                    <span style="color:blue">your</span>
-                    <p class="space"></p>
-                    <span style="color:grey">ad</span>
-                    <p class="space"></p>
-                    <span style="color:red">could</span>
-                    <p class="space"></p>
-                    <span style="color:green">be</span>
-                    <p class="space"></p>
-                    <span style="color:orange">here</span>
-                </aside>
-                <div class="about__main">
-                    <h2 id="randomColor">We are the best in selling bicycles</h2>
-                    <p class="about__main-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt dolore inventore autem laborum, ullam dicta. Perferendis, eius ratione ducimus, labore tenetur harum eveniet placeat dolorum magni, reiciendis explicabo porro eaque.</p>
-                    <p class="about__main-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, doloribus molestiae sequi quasi distinctio quas nam ea dolor iusto, eaque quis. Maxime aliquid laborum facere cumque iusto, fugit facilis rem.</p>
-                </div>
-            </div>
-            <div class="contacts page">
-                <aside class="contacts__aside">
-                    <span style="color:grey">your</span>
-                    <p class="space"></p>
-                    <span style="color:red">ad</span>
-                    <p class="space"></p>
-                    <span style="color:green">could</span>
-                    <p class="space"></p>
-                    <span style="color:orange">be</span>
-                    <p class="space"></p>
-                    <span style="color:blue">here</span>
-                </aside>
-                <div class="contacts__main">
-                    <h2>You want a bicycle?</h2>
-                    <h3>You have some questions?</h3>
-                    <h4>Contant us!</h4>
-                    <table>
-                        <tr>
-                            <td>phone number:</td>
-                            <th>+109996667788</th>
-                        </tr>
-                        <tr>
-                            <td>e-mail:</td>
-                            <th>bicycle.e_shop@monkey.com</th>
-                        </tr>
-                        <tr>
-                            <td>we on facebook:</td>
-                            <th><a href="#">facebook.com/bicycle.e_shop</a></th>
-                        </tr>
-                        <tr>
-                            <td>we on twitter:</td>
-                            <th><a href="#">twitter.com/bicycle.e_shop</a></th>
-                        </tr>
-                        <tr>
-                            <td>we on instagram:</td>
-                            <th><a href="#">instagram.com/bicycle.e_shop</a></th>
-                        </tr>
-                    </table>
-                </div>
+            <div class="header__user-info">
+                <p><i class="fas fa-user-circle"></i> Hello, <span id="header__user-name"></span>! Wellcome to our
+                    website!</p>
+                <form action="" name="exit">
+                    <input type="button" value="my profile" id="header__full-info">
+                    <input type="button" value="exit" id="header__exit">
+                </form>
             </div>
         </div>
-        <footer class="footer">
-            <p class="footer__rights">All rights reserved ©</p>
-            <div class="footer__menu">
-                <ul class="footer__menu-items">
-                    <li><a href="">Click and Collect <i class="far fa-hand-point-right"></i></a></li>
-                    <li><a href="">Delivery <i class="fas fa-shopping-bag"></i></a></li>
-                    <li><a href="">Find a Store <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
-                <ul class="footer__menu-items">
-                    <li><a href="">Secure Payment Option <i class="fas fa-lock"></i></a></li>
-                    <li><a href="">Questions &#38 Answers <i class="far fa-question-circle"></i></a></li>
-                    <li><a href="">Trade Credit Account <i class="fab fa-slideshare"></i></a></li>
-                </ul>
-                <ul class="footer__menu-items">              
-                    <li><a href="">Request a Catalogue <i class="fas fa-laptop"></i></a></li>
-                    <li><a href="">Card <i class="far fa-credit-card"></i></a></li>
-                    <li><a href="">App <i class="fab fa-speakap"></i></i></a></li>
+        <div class="header__logo">
+            <div>
+                <h1>Bicycle <i class="fas fa-bicycle"></i></h1>
+                <h3>e-shop</h3>
+            </div>
+            <div class="header__logo-center">
+                <h3>just</h3>
+                <h3>choose</h3>
+                <h3>your</h3>
+                <h2>bicycle</h2>
+            </div>
+            <div class="header__logo-guarantee">
+                <h2>We guarantee:</h2>
+                <ul>
+                    <li>lowest prices</li>
+                    <li>highest quality</li>
+                    <li>quickest delivery</li>
+                    <li>smile on your face :)</li>
                 </ul>
             </div>
-            <ul class="footer__icons">
-                <p>You can find us here: </p>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            </ul>
-            <ul class="footer__cards">
-                <p>We accept: </p>
-                <li id="payPal"></li>
-                <li id="visa"></li>
-                <li id="visa2"></li>
-                <li id="mastecard"></li>
-                <li id="mastecard2"></li>
-                <li id="tradeUk"></li>
-            </ul>
-        </footer>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="#" class="nav__item nav__item_active">
+                    <i class="fas fa-home"></i>
+                    <span class="nav__title">general</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav__item">
+                    <i class="fas fa-search"></i>
+                    <span class="nav__title">search</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav__item">
+                    <i class="fas fa-bicycle"></i>
+                    <span class="nav__title">about us</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav__item">
+                    <i class="far fa-envelope"></i>
+                    <span class="nav__title">contacts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="general page">
+            <aside class="general__aside">
+                <form action="" name="filter">
+                    <p class="general__aside-title">Price:</p>
+                    <table>
+                        <tr>
+                            <td>from:</td>
+                            <td>
+                                <input type="text" maxlength="4" class="general__aside-fromTo"> $
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>to:</td>
+                            <td>
+                                <input type="text" maxlength="4" class="general__aside-fromTo"> $
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="general__aside-title">Size of wheel:</p>
+                    <label>
+                        <input type="checkbox" name="20"> 20"</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="22"> 22"</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="24"> 24"</label>
+                    <p class="space"></p>
+                    <p class="general__aside-title">Color:</p>
+                    <label>
+                        <input type="checkbox" name="red"> red</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="black"> black</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="orange"> orange</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="brown"> brown</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="colored"> colored</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="grey"> grey</label>
+                    <p class="space"></p>
+                    <p class="general__aside-title">Year:</p>
+                    <label>
+                        <input type="checkbox" name="2015"> 2015</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="2016"> 2016</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="2017"> 2017</label>
+                    <p class="space"></p>
+                    <p class="general__aside-title">Country:</p>
+                    <label>
+                        <input type="checkbox" name="USA"> USA</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="France"> France</label>
+                    <p class="space"></p>
+                    <label>
+                        <input type="checkbox" name="Germany"> Germany</label>
+                    <p class="space"></p>
+                    <input type="button" value="apply" class="general__aside-apply">
+                    <input type="button" value="reset" class="general__aside-reset">
+                </form>
+            </aside>
+            <div class="general__top">
+                <div class="general__bikes">
+                    <section class="general__bike-section">
+                        <img class="general__img" src="" alt="">
+                        <p class="general__name"></p>
+                        <p class="general__price"></p>
+                    </section>
+                    <section class="general__bike-section">
+                        <img class="general__img" src="" alt="">
+                        <p class="general__name"></p>
+                        <p class="general__price"></p>
+                    </section>
+                    <section class="general__bike-section">
+                        <img class="general__img" src="" alt="">
+                        <p class="general__name"></p>
+                        <p class="general__price"></p>
+                    </section>
+                    <section class="general__bike-section">
+                        <img class="general__img" src="" alt="">
+                        <p class="general__name"></p>
+                        <p class="general__price"></p>
+                    </section>
+                </div>
+                <ul class="general__page-changer">
+                    <li><a id="general__page-changer_b" href="#">move back</a></li>
+                    <li><a id="general__page-changer1" href="#">1</a></li>
+                    <li id="general__page-move"><a id="general__page-changer_f" href="#">move forward</a></li>
+                </ul>
+            </div>
+            <div class="general__info">
+                <img class="general__info-img" src="" alt="">
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td class="general__info-name"></td>
+                    </tr>
+                    <tr>
+                        <th>Price:</th>
+                        <td class="general__info-price"></td>
+                    </tr>
+                    <tr>
+                        <th>Size of wheel:</th>
+                        <td class="general__info-wheel"></td>
+                    </tr>
+                    <tr>
+                        <th>Color:</th>
+                        <td class="general__info-color"></td>
+                    </tr>
+                    <tr>
+                        <th>Year:</th>
+                        <td class="general__info-year"></td>
+                    </tr>
+                    <tr>
+                        <th>Country:</th>
+                        <td class="general__info-country"></td>
+                    </tr>
+                </table>
+                <button class="general__close">X</button>
+            </div>
+        </div>
+        <div class="search page">
+            <aside class="search__aside">
+                <span style="color:red">your</span>
+                <p class="space"></p>
+                <span style="color:green">ad</span>
+                <p class="space"></p>
+                <span style="color:orange">could</span>
+                <p class="space"></p>
+                <span style="color:blue">be</span>
+                <p class="space"></p>
+                    <span>here</span>
+            </aside>
+            <div class="search__main">
+                <form action="" name="search">
+                    <label>Model's name:
+                        <input type="text" class="search__text" maxlength="20">
+                    </label>
+                    <input type="button" value="search" class="search__btn">
+                    <input type="button" value="reset" class="search-reset__btn">
+                </form>
+                <ul class="search__points"></ul>
+            </div>
+            <div class="general__info">
+                <img class="general__info-img" src="" alt="">
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td class="general__info-name"></td>
+                    </tr>
+                    <tr>
+                        <th>Price:</th>
+                        <td class="general__info-price"></td>
+                    </tr>
+                    <tr>
+                        <th>Size of wheel:</th>
+                        <td class="general__info-wheel"></td>
+                    </tr>
+                    <tr>
+                        <th>Color:</th>
+                        <td class="general__info-color"></td>
+                    </tr>
+                    <tr>
+                        <th>Year:</th>
+                        <td class="general__info-year"></td>
+                    </tr>
+                    <tr>
+                        <th>Country:</th>
+                        <td class="general__info-country"></td>
+                    </tr>
+                </table>
+                <button class="general__close">X</button>
+            </div>
+        </div>
+        <div class="about page">
+            <aside class="about__aside">
+                <span style="color:blue">your</span>
+                <p class="space"></p>
+                <span style="color:grey">ad</span>
+                <p class="space"></p>
+                <span style="color:red">could</span>
+                <p class="space"></p>
+                <span style="color:green">be</span>
+                <p class="space"></p>
+                <span style="color:orange">here</span>
+            </aside>
+            <div class="about__main">
+                <h2 id="randomColor">We are the best in selling bicycles</h2>
+                <p class="about__main-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt dolore
+                    inventore autem laborum, ullam dicta. Perferendis, eius ratione ducimus, labore tenetur harum
+                    eveniet placeat dolorum magni, reiciendis explicabo porro eaque.</p>
+                <p class="about__main-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, doloribus
+                    molestiae sequi quasi distinctio quas nam ea dolor iusto, eaque quis. Maxime aliquid laborum facere
+                    cumque iusto, fugit facilis rem.</p>
+            </div>
+        </div>
+        <div class="contacts page">
+            <aside class="contacts__aside">
+                <span style="color:grey">your</span>
+                <p class="space"></p>
+                <span style="color:red">ad</span>
+                <p class="space"></p>
+                <span style="color:green">could</span>
+                <p class="space"></p>
+                <span style="color:orange">be</span>
+                <p class="space"></p>
+                <span style="color:blue">here</span>
+            </aside>
+            <div class="contacts__main">
+                <h2>You want a bicycle?</h2>
+                <h3>You have some questions?</h3>
+                <h4>Contant us!</h4>
+                <table>
+                    <tr>
+                        <td>phone number:</td>
+                        <th>+109996667788</th>
+                    </tr>
+                    <tr>
+                        <td>e-mail:</td>
+                        <th>bicycle.e_shop@monkey.com</th>
+                    </tr>
+                    <tr>
+                        <td>we on facebook:</td>
+                        <th><a href="#">facebook.com/bicycle.e_shop</a></th>
+                    </tr>
+                    <tr>
+                        <td>we on twitter:</td>
+                        <th><a href="#">twitter.com/bicycle.e_shop</a></th>
+                    </tr>
+                    <tr>
+                        <td>we on instagram:</td>
+                        <th><a href="#">instagram.com/bicycle.e_shop</a></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
-    <div class="wrapper_2"></div>
-    <div class="fullInfo">
-        <p class="info__user-name"></p>
+    <footer class="footer">
+        <p class="footer__rights">All rights reserved ©</p>
+        <div class="footer__menu">
+            <ul class="footer__menu-items">
+                <li><a href="">Click and Collect <i class="far fa-hand-point-right"></i></a></li>
+                <li><a href="">Delivery <i class="fas fa-shopping-bag"></i></a></li>
+                <li><a href="">Find a Store <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+            <ul class="footer__menu-items">
+                <li><a href="">Secure Payment Option <i class="fas fa-lock"></i></a></li>
+                <li><a href="">Questions &#38 Answers <i class="far fa-question-circle"></i></a></li>
+                <li><a href="">Trade Credit Account <i class="fab fa-slideshare"></i></a></li>
+            </ul>
+            <ul class="footer__menu-items">
+                <li><a href="">Request a Catalogue <i class="fas fa-laptop"></i></a></li>
+                <li><a href="">Card <i class="far fa-credit-card"></i></a></li>
+                <li><a href="">App <i class="fab fa-speakap"></i></i></a></li>
+            </ul>
+        </div>
+        <ul class="footer__icons">
+            <p>You can find us here: </p>
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <ul class="footer__cards">
+            <p>We accept: </p>
+            <li id="payPal"></li>
+            <li id="visa"></li>
+            <li id="visa2"></li>
+            <li id="mastecard"></li>
+            <li id="mastecard2"></li>
+            <li id="tradeUk"></li>
+        </ul>
+    </footer>
+</div>
+<div class="wrapper_2"></div>
+<div class="fullInfo">
+    <p class="info__user-name"></p>
+    <table>
+        <tr>
+            <th>age:</th>
+            <td class="info__user-age"></td>
+        </tr>
+        <tr>
+            <th>sex:</th>
+            <td class="info__user-sex"></td>
+        </tr>
+        <tr>
+            <th>from:</th>
+            <td class="info__user-country"></td>
+        </tr>
+    </table>
+    <div>
+        <input type="button" value="close" class="reg__close">
+    </div>
+</div>
+<div class="addNewUser">
+    <form action="" name="reg">
         <table>
             <tr>
-                <th>age: </th>
-                <td class="info__user-age"></td>
+                <td>Login:</td>
+                <td>
+                    <input type="text" class="reg" maxlength="20" placeholder="jSmith"> **
+                </td>
             </tr>
             <tr>
-                <th>sex: </th>
-                <td class="info__user-sex"></td>
+                <td>Password:</td>
+                <td>
+                    <input type="password" class="reg" maxlength="20" placeholder="********"> **
+                </td>
             </tr>
             <tr>
-                <th>from: </th>
-                <td class="info__user-country"></td>
+                <td>Name:</td>
+                <td>
+                    <input type="text" class="reg" maxlength="10" placeholder="John"> **
+                </td>
+            </tr>
+            <tr>
+                <td>Surname:</td>
+                <td>
+                    <input type="text" class="reg" maxlength="10" placeholder="Smith"> **
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>
+                    <input type="text" class="reg" placeholder="27">
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <input type="text" class="reg" placeholder="England">
+                </td>
+            </tr>
+            <tr>
+                <td>Sex:</td>
+                <td>
+                    <label>Male:
+                        <input type="radio" name="sex" title="male">
+                    </label>
+                    <label>Female:
+                        <input type="radio" name="sex" title="female">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:14px;text-align:right">** -</td>
+                <td style="font-size:12px;">required fields</td>
             </tr>
         </table>
-        <div>
-            <input type="button" value="close" class="reg__close">            
-        </div>
-    </div>
-    <div class="addNewUser">
-        <form action="" name="reg">
-            <table>
-                <tr>
-                    <td>Login:</td>
-                    <td>
-                        <input type="text" class="reg" maxlength="20" placeholder="jSmith"> **</td>
-                </tr>
-                <tr>
-                    <td>Password:</td>
-                    <td>
-                        <input type="password" class="reg" maxlength="20" placeholder="********"> **</td>
-                </tr>
-                <tr>
-                    <td>Name:</td>
-                    <td>
-                        <input type="text" class="reg" maxlength="10" placeholder="John"> **</td>
-                </tr>
-                <tr>
-                    <td>Surname:</td>
-                    <td>
-                        <input type="text" class="reg" maxlength="10" placeholder="Smith"> **</td>
-                </tr>
-                <tr>
-                    <td>Age:</td>
-                    <td>
-                        <input type="text" class="reg" placeholder="27">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Country:</td>
-                    <td>
-                        <input type="text" class="reg" placeholder="England">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Sex:</td>
-                    <td>
-                        <label>Male:
-                            <input type="radio" name="sex" title="male">
-                        </label>
-                        <label>Female:
-                            <input type="radio" name="sex" title="female">
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-size:14px;text-align:right">** -</td>
-                    <td style="font-size:12px;">required fields</td>
-                </tr>
-            </table>
-            <input type="button" value="register" class="reg__register">
-            <input type="button" value="close" class="reg__close">
-        </form>
-    </div>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <script src="js/main.js"></script>
+        <input type="button" value="register" class="reg__register">
+        <input type="button" value="close" class="reg__close">
+    </form>
+</div>
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
