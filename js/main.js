@@ -14,18 +14,17 @@ function getId(id) {
 
 for (var i = 0; i <= 3; i++) {
     getC('nav__item', i).onclick = function () {
-        var cls = '';
-        var txt = this.children[1].innerHTML;
-        for (var i = 0; i < txt.length; i++) {
-            if (txt[i] == ' ') {
+        var cl = '';
+        for (var i = 0; i < this.innerHTML.length; i++) {
+            if (this.innerHTML[i] == ' ') {
                 break;
             }
-            cls += txt[i];
+            cl += this.innerHTML[i];
         }
         for (var i = 0; i <= 3; i++) {
             getC('page', i).style.display = 'none';
         }
-        getC(cls, 0).style.display = 'flex';
+        getC(cl, 0).style.display = 'flex';
         getC('nav__item_active', 0).className = 'nav__item';
         this.className = 'nav__item_active';
 
@@ -314,14 +313,13 @@ for (var i = 1; i <= count; i++) {
         this.style.textDecoration = 'underline';
         this.style.fontWeight = 'bold';
         for (var img = 0; img <= 3; img++) {
-            getT('section', img).removeAttribute("onclick");
             getC('general__img', img).src = '';
             getC('general__name', img).innerHTML = '';
             getC('general__price', img).innerHTML = '';
         }
         var cof = (this.innerHTML - 1) * 4;
         for (var img = 0; img <= 3; img++) {
-            if (cof + img < bikes.length) {                
+            if (cof + img < bikes.length) {
                 getC('general__img', img).src = bikes[cof + img].img;
                 getC('general__name', img).innerHTML = bikes[cof + img].name;
                 getC('general__price', img).innerHTML = bikes[cof + img].price + ' $';
@@ -355,23 +353,19 @@ getId('general__page-changer_f').onclick = function () {
 /*--------------- full info ---------------*/
 
 for (var i = 0; i <= 3; i++) {
-    getC('general__bike-section', i).onclick = function () {
-        if (this.children[1].innerHTML != ''){
-            getC('general__top', 0).style.display = 'none';
-            getC('general__info', 0).style.display = 'flex';
-            for (var i in bikes) {
-                if (bikes[i].name == this.children[1].innerHTML) {
-                    getC('general__info-img', 0).src = bikes[i].img;
-                    getC('general__info-name', 0).innerHTML = bikes[i].name;
-                    getC('general__info-price', 0).innerHTML = bikes[i].price + ' $';
-                    getC('general__info-wheel', 0).innerHTML = bikes[i].wheel + '"';
-                    getC('general__info-color', 0).innerHTML = bikes[i].color;
-                    getC('general__info-year', 0).innerHTML = bikes[i].year;
-                    getC('general__info-country', 0).innerHTML = bikes[i].country;
-                }
+    getC('general__name', i).onclick = function () {
+        getC('general__top', 0).style.display = 'none';
+        getC('general__info', 0).style.display = 'flex';
+        for (var i in bikes) {
+            if (bikes[i].name == this.innerHTML) {
+                getC('general__info-img', 0).src = bikes[i].img;
+                getC('general__info-name', 0).innerHTML = bikes[i].name;
+                getC('general__info-price', 0).innerHTML = bikes[i].price + ' $';
+                getC('general__info-wheel', 0).innerHTML = bikes[i].wheel + '"';
+                getC('general__info-color', 0).innerHTML = bikes[i].color;
+                getC('general__info-year', 0).innerHTML = bikes[i].year;
+                getC('general__info-country', 0).innerHTML = bikes[i].country;
             }
-        } else {
-            return
         }
     }
 }
@@ -394,7 +388,6 @@ for (var i = 0; i < bikes_copy.length; i++) {
 getC('search__btn', 0).onclick = function () {
     for (var i = 0; i < bikes_copy.length; i++) {
         getC('search__point', i).innerHTML = '';
-        getC('search__point', i).classList.remove("search__point-filled");
     }
     if (search[0].value == '') {
         alert('fill up the field, please');
@@ -404,7 +397,6 @@ getC('search__btn', 0).onclick = function () {
                 for (var iv = 0; iv < bikes_copy.length; iv++) {
                     if (getC('search__point', iv).innerHTML == '') {
                         getC('search__point', iv).innerHTML = bikes_copy[i].name;
-                        getC('search__point', iv).className += " search__point-filled";
                         break;
                     }
                 }
@@ -423,7 +415,6 @@ getC('search-reset__btn', 0).onclick = function () {
             break;
         }
         getC('search__point', i).innerHTML = '';
-        getC('search__point', i).classList.remove("search__point-filled");
         search[0].value = ''
     }
 }
@@ -451,11 +442,49 @@ getC('general__close', 1).onclick = function () {
     getC('general__info', 1).style.display = 'none';
 }
 
+/*--------------- users ---------------*/
+
+var users = [
+    {
+        login: 'qwe',
+        pass: 'qwe',
+        name: 'Jack',
+        sname: 'Smith',
+        sex: 'male',
+        age: 25,
+        country: 'Ireland'
+    }
+]
+
 /*--------------- enter ---------------*/
 
-var enter = document.forms.enter;
+var enter = document.forms.enter
 
-getId('header__signIn').onclick = function () {
+for (var i = 0; i <= 1; i++) {
+    getC('header__sign', i).onmousedown = function () {
+        this.style.width = '56px';
+        this.style.height = '21px';
+        this.style.fontSize = '12px';
+        this.style.marginLeft = '2px';
+        this.style.marginRight = '2px';
+    };
+    getC('header__sign', i).onmouseout = function () {
+        this.style.width = '60px';
+        this.style.height = '25px';
+        this.style.fontSize = '13px';
+        this.style.marginLeft = '';
+        this.style.marginRight = '';
+    };
+    getC('header__sign', i).onmouseup = function () {
+        this.style.width = '60px';
+        this.style.height = '25px';
+        this.style.fontSize = '13px';
+        this.style.marginLeft = '';
+        this.style.marginRight = '';
+    };
+}
+
+getId('header__sign_in').onclick = function () {
     if (enter[0].value == 0 || enter[1].value == 0) {
         alert('please, fill up the fields');
     } else {
@@ -496,13 +525,15 @@ getId('header__exit').onclick = function () {
     getC('header__sign_in', 0).style.display = 'block';
 }
 
+/*---------------  ---------------*/
+/*---------------  ---------------*/
 /*--------------- register ---------------*/
 
 var reg = document.forms.reg
 
 getC('wrapper_2', 0).style.height = getT('body', 0).clientHeight + 'px';
 
-getId('header__signUp').onclick = function () {
+getId('header__sign_up').onclick = function () {
     getC('addNewUser', 0).style.display = 'block';
     getC('wrapper_2', 0).style.display = 'block';
 }
@@ -592,16 +623,6 @@ getId('randomColor').onmouseover = function () {
     this.style.color = 'rgb(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ')'
 }
 
-/*--------------- users ---------------*/
-
-var users = [
-    {
-        login: 'jSmith',
-        pass: '123',
-        name: 'John',
-        sname: 'Smith',
-        sex: 'male',
-        age: 25,
-        country: 'England'
-    }
-]
+/*---------------  ---------------*/
+/*---------------  ---------------*/
+/*---------------  ---------------*/
